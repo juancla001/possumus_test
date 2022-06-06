@@ -1,12 +1,17 @@
 import React from 'react'
-
-import { Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const DetallePersonaje = () => {
+
+
   return (
-    <div>DetallePersonaje</div>
+    <>
+    <div>
+      DetallePersonaje
+      </div>
+
+    </>
   )
 }
-
 
 export default DetallePersonaje;
