@@ -26,25 +26,25 @@ const Home = () => {
           personajesList.map((unPersonaje, index) => {
             return (
 
-              <div className="row-3 m-2" key={index}>
+              <div className="col-3 m-2" key={index}>
                 {
-                  <div className="card" >
+                  <div class="card border-dark">
                     <div class="card-body">
-                      <blockquote className="blockquote mb-0 list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                        <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>
-                          <p>{unPersonaje.name}</p>
-                        </Link>
-
-                      </blockquote>
+                      <h5 class="card-title">{unPersonaje.name}</h5>
+                      <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>
+                        <p>VER MAS</p>
+                      </Link>
                     </div>
                   </div>
 
                 }
               </div>
+
             )
           })
         }
       </div>
+
     </>
   )
 }
