@@ -38,7 +38,7 @@ const Home = () => {
                     </div>
                     <div class="card-body">
                       <blockquote className="blockquote mb-0 list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                        <Link to="/detalle">
+                        <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>
                           <p>{unPersonaje.name}</p>
                         </Link>
 
