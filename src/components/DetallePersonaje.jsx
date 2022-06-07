@@ -9,8 +9,6 @@ const DetallePersonaje = () => {
   const navigate = useNavigate();
 
   let { id } = useParams();
-  console.log(id);
-  console.log("vivo")
 
   const URL = 'https://swapi.dev/api/people/' + id
   const [personaje, setPersonaje] = useState({});
@@ -19,8 +17,6 @@ const DetallePersonaje = () => {
   useEffect(() => {
     async function fetchData(req) {
       const request = await axios.get(URL)
-      console.log(request.data.results);
-      console.log(request.data);
       setPersonaje(request.data)
 
     }
@@ -30,8 +26,6 @@ const DetallePersonaje = () => {
   return personaje.name !== null ? (
 
     <>
-
-
 
       <div className="container">
 

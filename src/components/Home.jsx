@@ -11,9 +11,7 @@ const Home = () => {
   useEffect(() => {
     async function fetchData(req) {
       const request = await axios.get(URL)
-      console.log(request.data.results);
       setPersonajesList(request.data.results)
-      console.log("asdsad");
     }
     fetchData()
   }, []);
