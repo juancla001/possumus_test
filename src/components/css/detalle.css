@@ -10,7 +10,7 @@
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin-top: auto;
     overflow: hidden;
     width: 15rem;
     backdrop-filter: blur(1rem);
