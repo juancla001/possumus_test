@@ -8,7 +8,6 @@ const Home = () => {
   const URL = 'https://swapi.dev/api/people/'
   const [personajesList, setPersonajesList] = useState([]);
 
-
   useEffect(() => {
     async function fetchData(req) {
       const request = await axios.get(URL)
@@ -20,7 +19,6 @@ const Home = () => {
   }, []);
 
 
-
   return (
     <>
 
@@ -30,12 +28,9 @@ const Home = () => {
           personajesList.map((unPersonaje, index) => {
             return (
 
-              <div className="row-3" key={index}>
+              <div className="col-3 m-2" key={index}>
                 {
-                  <div className="card">
-                    <div className="card-header">
-                      Personaje
-                    </div>
+                  <div className="card" >
                     <div class="card-body">
                       <blockquote className="blockquote mb-0 list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                         <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>

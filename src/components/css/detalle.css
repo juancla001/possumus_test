@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: hidden;
+    width: 15rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255 255, 0.060);
+    border: .1rem solid rgba(255, 255 255, 0.18);
+    color: grey;
+}
+
+.top-row {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.content h5 p {
+    font-size: .9rem;
+}
+
+.btn {
+    border-radius: 1rem;
+    padding: .5rem .3rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+}
