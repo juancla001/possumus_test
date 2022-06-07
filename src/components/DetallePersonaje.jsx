@@ -1,11 +1,15 @@
-import React from 'react'
-import {useParams } from 'react-router-dom';
+
+import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 const DetallePersonaje = () => {
+  const navigate = useNavigate();
+
   let { id } = useParams();
   console.log(id);
   console.log("vivo")
@@ -35,11 +39,12 @@ const DetallePersonaje = () => {
           <li className="list-group-item">{personaje.homeworld}</li>
           <li className="list-group-item">Vehicles</li>
         </ul>
+        <button onClick={() => navigate(-1)}>go back</button>
       </div>
 
     </>
   )
-  : null
+    : null
 
 }
 
