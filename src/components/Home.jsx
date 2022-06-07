@@ -26,7 +26,7 @@ const Home = () => {
           personajesList.map((unPersonaje, index) => {
             return (
 
-              <div className="col-3 m-2" key={index}>
+              <div className="row-3 m-2" key={index}>
                 {
                   <div className="card" >
                     <div class="card-body">
