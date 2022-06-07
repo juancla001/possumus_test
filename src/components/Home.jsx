@@ -48,11 +48,13 @@ const Home = () => {
                     <div class="card border-dark">
                       <div class="card-body">
                         <h5 class="card-title">{unPersonaje.name}</h5>
-                        <button type="button" className="btn  btn-sm">
+                        
                         <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>
+                        <button type="button" className="btn  btn-sm">
                           Ver mas
-                        </Link>
                         </button>
+                        </Link>
+                        
 
                       </div>
                     </div>
