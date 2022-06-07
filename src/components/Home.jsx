@@ -5,6 +5,8 @@ import axios from 'axios';
 import ClipLoader from "react-spinners/ClipLoader";
 
 
+
+
 const Home = () => {
 
   const URL = 'https://swapi.dev/api/people/'
@@ -33,7 +35,7 @@ const Home = () => {
       <div className="row">
       {
         loading?(
-          <ClipLoader color={"F8E71C"} loading={loading} size={150} />
+          <ClipLoader className="loader" color={"F8E71C"} loading={loading} size={150} />
         )
         : (
         <>
@@ -46,9 +48,12 @@ const Home = () => {
                     <div class="card border-dark">
                       <div class="card-body">
                         <h5 class="card-title">{unPersonaje.name}</h5>
+                        <button type="button" className="btn  btn-sm">
                         <Link to={`/detalle/${unPersonaje.url.split(["/"])[5]}`}>
-                          <p>VER MAS</p>
+                          Ver mas
                         </Link>
+                        </button>
+
                       </div>
                     </div>
   
